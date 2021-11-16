@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HOUSE PRICE PREDICTION  </title>
+    </head>
+    <body>
+        <h1> HOUSE PRICE </h1>
+        <p> Predict House Price </p>
+        <form method="post" action="{{url_for('predict')}}"> 
+            <input type='number' name='BHK' placeholder="Number of BHK required" required='required'/>
+            <input type='number' name='Bath' placeholder="Number of Bathroom required" required='required'/>
+            <input type='number' name='Sqft' placeholder="Square foot of house " required='required'/>
+            <input type='text' name='Location' placeholder="Location of the House" required='required'/>
+
+            <button type='submit' class='btn btn-primary'>Predict</button>
+        </form>
+    </body>
+
+</html>
