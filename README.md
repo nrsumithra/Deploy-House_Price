@@ -13,6 +13,17 @@
 ✔Now run the Flask file.
 ✔We can notice 'http:.....' getting created in the debug area.
 ✔Click on that link...Our web page gets displayed.
+  
+✔We need to create 'Form.html'file inside templates folder.
+✔When we run the flask file,it generates eg.http://127.0.0.1:5000**/** ,our '/' on the web page looks for '/' function in the flask file--which returns render_template(form.html) file and whatever the code action is in the form.html file that gets displayed on web browser,so that the user can input the datas and click on submit button
+✔Once Submit button is pressed on web page,then it will look for the 'action' that is specified in the Form.html file eg.action={{url_for('predict')}}
+✔The web page(Client) looks for the '/predict' function in the Flask file.    
+✔Once the submit is done,the connection goes to the Backend Flask Server where the predict function would be present and the inputs would be given as an array to the model for prediction.
+✔The communication between Web page(Client) and the Flask server(Server) is made by HTTP Protocol.
+✔HTTP works as a request-response protocol between client and the server
+✔Like we can perform CRUD( C-Create, R-Retrieve, U-Update, D-Delete) Operations on the Database, here in HTTP protocol we have GET(Retrieve), POST(Create), PUT(Update), Delete(Delete) operations.
+✔  
+  
 
   
   
