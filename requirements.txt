@@ -57,7 +57,6 @@ threadpoolctl==2.1.0
 toml==0.10.2
 tomli==1.2.1
 tornado @ file:///C:/ci/tornado_1606924294691/work
-traitlets @ file:///home/ktietz/src/ci/traitlets_1611929699868/work
 typing-extensions==3.10.0.2
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 Werkzeug==1.0.1
