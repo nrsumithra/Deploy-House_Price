@@ -1,6 +1,5 @@
 astroid==2.4.2
 autopep8==1.5.7
-backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
 black==21.9b0
 certifi==2021.5.30
 click==7.1.2
@@ -37,7 +36,6 @@ patsy==0.5.2
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
 Pillow==8.0.1
 platformdirs==2.3.0
-prompt-toolkit @ file:///Users/ktietz/demo/mc3/conda-bld/prompt-toolkit_1629146841569/work
 pycodestyle==2.7.0
 Pygments @ file:///tmp/build/80754af9/pygments_1629234116488/work
 pylint==2.6.0
@@ -58,7 +56,6 @@ toml==0.10.2
 tomli==1.2.1
 tornado @ file:///C:/ci/tornado_1606924294691/work
 typing-extensions==3.10.0.2
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 Werkzeug==1.0.1
 wincertstore==0.2
 wrapt==1.12.1
