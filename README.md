@@ -40,9 +40,9 @@
 ✔ls -al in the bash terminal(lists all the files present in that folder)
 ✔git init (Initializes the local project folder and creates .git folder in that project folder eg.c:/Deployment
 ✔ls -al (Now we can see the .git folder)
-✔git remote add origin https://github.com/nrsumithra/Deploy-Models.git (specify where do we want to add the project folder)
+✔git remote add origin https://github.com/nrsumithra/House_Price.git (specify where do we want to add the project folder)
 ✔git status (displays all the files present inside the local project folder(red color if the files are not included, to be committed action)
 ✔git add 'HOUSE PRICE/' (adds the folder to the -to be commited action)
 ✔git status (Now all the files turn green-meaning that they are added successfully- to be commited action)  
 ✔git commit -m "Deploy-Models" (This name gets displayed in description of the files(beside filename) in Github)  
-✔git push origin master (Now the files can be viewed in the github under Deploy-Models repository)  
+✔git push origin master (Now the files can be viewed in the github under House_Price repository)  
