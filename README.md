@@ -1,6 +1,7 @@
 # Deploy-Models
 ✔ Deploy the trained and validated models after creating Flask file and the template folder having index.html files
 # Deploy-Models
+🏡 House Price Prediction deployed url : https://housepricebrokers.herokuapp.com/
 ✔ Create <Project Name> folder in Virtual Studio Code IDE
 ✔Inside that folder create 'train.py' file
 ✔Create new environment eg deployment 
