@@ -28,7 +28,7 @@
 ✔  
   
 ✔Create a 'Procfile' ('P' should be capital) under the project folder having 'web: gunicorn app:app'typed inside it-----This is required for deploying in Heroku.
-✔web:(Heroku knows that it is a web application) gunicorn(It is the web server at the backend--for flask file we need to put gunicorn only), app:(which application needs to be opened eg app.py in our case)--as we have selected python as our language while creating account with Heroku,it will look for .py file only.   
+✔web:(Heroku knows that it is a web application) gunicorn(It is the web server at the backend--for flask file we need to put gunicorn only), :app(name given to Flask file(app=Flask(__name__) in our case)--as we have selected python as our language while creating account with Heroku,it will look for .py file only.   
   
 ✔Create requirements file using 'pip freeze > requirements.txt'--notice this file getting created under the same location 
 ✔If someone wants to run our code then they need to install the required packages using ' pip install -r requirements.txt' under deployment environment  
