@@ -201,6 +201,73 @@ from scipy.stats import probplot
 import pylab
 #split train and test data
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.30,random_state=50)
+
+def Hyperparameter_tuning(X,y):
+    model_params={
+        'LR':{
+            
+            'model':LinearRegression(),
+            'Params':{
+                'normalize':[True,False]
+            }         
+        },
+        'RF':{
+            'model':RandomForestRegressor(oob_score=True),
+            'Params':{
+                'n_estimators':[500],
+                'max_samples':[200,400,600],
+                'max_depth':[7,8,9,10],
+            }
+        },
+        'DT':{
+            'model':DecisionTreeRegressor(),
+            'Params':{
+                'max_depth':[7,8,9,10],
+            } 
+         },
+              
+        'Lasso':{
+            'model':Lasso(),
+            'Params':{
+                'alpha':[2,.001,.01],
+                'fit_intercept':[True],
+            }
+            
+        },
+        'Ridge':{
+            'model':Ridge(),
+            'Params':{
+                'alpha':[2,.01,.001],
+                'fit_intercept':[True],
+            }
+        },
+        'KNN':{
+            'model':KNeighborsRegressor(),
+            'Params':{
+                'weights' :['uniform', 'distance'],
+                'n_neighbors':[20,40,60]
+            }          
+        }
+        
+        }
+      
+    CV=ShuffleSplit(n_splits=10,test_size=.20,random_state=50)
+    scores=[]
+    for key,reg in model_params.items():
+        rscv=RandomizedSearchCV(reg['model'],reg['Params'],cv=CV)
+        reg_fit=rscv.fit(X,y)
+        scores.append({
+            'Model':key,
+            'Best_Param':reg_fit.best_params_,
+            'Best_score':round(reg_fit.best_score_,4)
+            
+        })
+    return pd.DataFrame(scores,columns=['Model','Best_Param','Best_score'])
+
+#Hyperparameter Tuning
+Hyperparameter_tuning(X_train,y_train)
+
+
 LR=LinearRegression(normalize=True)
 LR.fit(X_train,y_train)
 trainscore=LR.score(X_train,y_train)
