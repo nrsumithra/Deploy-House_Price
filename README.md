@@ -2,7 +2,7 @@
 ✔ Deploy the trained and validated models after creating Flask file and the template folder having index.html files
 # Deploy-Models
 🏡 House Price Prediction deployed url : https://housepricebrokers.herokuapp.com/
-✔ Create <Project Name> folder in Virtual Studio Code IDE
+✔ Create <Project Name> folder in Visual Studio Code IDE
 ✔Inside that folder create 'train.py' file
 ✔Create new environment eg deployment 
 ✔Navigate to Deployment environment using 'conda activate deployment' in vs code terminal. cd project folder. 
@@ -20,7 +20,7 @@
   
 ✔We need to create 'Form.html'file inside templates folder.
 ✔When we run the flask file,it generates eg.http://127.0.0.1:5000**/** ,our '/' on the web page looks for '/' function in the flask file--which returns render_template(form.html) file and whatever the code action is in the form.html file that gets displayed on web browser,so that the user can input the datas and click on submit button
-✔Once Submit button is pressed on web page,then it will look for the 'action' that is specified in the Form.html file eg.action={{url_for('predict')}}
+✔Once Submit button is pressed on web page,then it will look for the 'action' that is specified in the Form.html file eg.action={{url_for('predict')}}--(Jinja)
 ✔The web page(Client) looks for the '/predict' function in the Flask file.    
 ✔Once the submit is done,the connection goes to the Backend Flask Server where the predict function would be present and the inputs would be given as an array to the model for prediction.
 ✔The communication between Web page(Client) and the Flask server(Server) is made by HTTP Protocol.
