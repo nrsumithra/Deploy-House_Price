@@ -24,7 +24,7 @@ pd.set_option('display.max_rows',1000)
 pd.set_option('display.max_columns',1000)
 pd.set_option('display.max_colwidth',1000)
 #Load the File
-df=pd.read_csv("C:/Users/NANDAKUMAR/Desktop/SUMITHRA/DATASCIENCE/Data set/Bengaluru_House_Data.csv")
+df=pd.read_csv("C:/Users/NANDAKUMAR/Desktop/SUMITHRA/DATASCIENCE/Data set/House_Data.csv")
 df.head()
 #Get the total number of rows and columns in a file
 df.shape
